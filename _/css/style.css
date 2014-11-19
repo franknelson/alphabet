@@ -4,23 +4,15 @@
 .chromeframe {position: absolute; top: 0;}
 
 /* style */
-body{}
+body{font-family:arial, sans-serif;}
 #wrapper{overflow:hidden;}
 .row{clear:both; overflow:hidden; margin:2% 0;}
 .row div:last-child{margin-right:0;}
 
-.col {margin-right: 2%; float:left; min-height:150px; background-color:rgba(50,50,50,0.5);padding:1.5%;}
+ul li{float:left; width:16.66667%; min-height:1em;font-size:6em;line-height:1.95em;text-align:center;text-transform:uppercase;color:rgba(35,35,35,0.9);}
+/*ul li:nth-child(2n){background:rgba(0,0,0,0.1);}*/
 
-/*column definitions */
-.one{width:9.33333333333%;} /* 1/9 columns, 2%(16%) margin, 3%(27%) padding -- */
-.two{width:20.66666666667%;} /* 2/9 columns, 2%(16%) margin, 3%(27%) padding -- */
-.three{width:32%;} /* 3/9 columns, 2%(16%) margin, 3%(27%) padding -- */
-.four{width:43.33333333333%;} /* 4/9 columns, 2%(16%) margin, 3%(27%) padding -- */
-.five{width:54.6666666666667%;} /* 5/9 columns, 2%(16%) margin, 3%(27%) padding -- */
-.six{width:66%;} /* 6/9 columns, 2%(16%) margin, 3%(27%) padding -- */
-.seven{width:77.333333333%;} /* 7/9 columns, 2%(16%) margin, 3%(27%) padding -- */
-.eight{width:88.666666666667%;} /* 8/9 columns, 2%(16%) margin, 3%(27%) padding -- */
-.nine{width:100%;} /* 8/9 columns, 2%(16%) margin, 3%(27%) padding -- */
+ul li:hover{background:rgba(200,54,126,0.8);text-transform:lowercase;}
 
 
 
