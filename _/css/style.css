@@ -5,7 +5,7 @@
 
 /* style */
 body{font-family:arial, sans-serif;}
-#wrapper{overflow:hidden;}
+
 .row{clear:both; overflow:hidden; margin:2% 0;}
 .row div:last-child{margin-right:0;}
 
@@ -21,7 +21,7 @@ ul li:hover{background:rgba(200,54,126,0.8);text-transform:lowercase;}
 
 @media screen and (max-width: 780px) {
 body{background: rgba(240, 240, 240, 1.0);}
-	
+
 }
 
 @media screen and (max-width: 420px) {
