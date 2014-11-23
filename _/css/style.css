@@ -9,7 +9,7 @@ body{font-family:arial, sans-serif;}
 .row{clear:both; overflow:hidden; margin:2% 0;}
 .row div:last-child{margin-right:0;}
 
-ul li{float:left; width:16.66667%; min-height:1em;font-size:6em;line-height:1.95em;text-align:center;text-transform:uppercase;color:rgba(35,35,35,0.9);}
+ul li{float:left; width:16.66667%; min-height:1em;font-size:6em;line-height:1.65em;text-align:center;text-transform:uppercase;color:rgba(35,35,35,0.9);}
 /*ul li:nth-child(2n){background:rgba(0,0,0,0.1);}*/
 
 ul li:hover{background:rgba(200,54,126,0.8);text-transform:lowercase;}
