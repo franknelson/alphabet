@@ -8,6 +8,7 @@
 <!-- the "no-js" class is for Modernizr. -->
 
 <head>
+	<link href='http://fonts.googleapis.com/css?family=Kotta+One|Playfair+Display|Lora|Quicksand|Ubuntu|Exo|Alice|Ultra|Titillium+Web|Vidaloka' rel='stylesheet' type='text/css'>
 
 	<meta charset="utf-8">
 
@@ -27,11 +28,8 @@
 	<!--  Mobile Viewport -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<!-- Use Iconifyer to generate all the favicons and touch icons you need: nnnnnnnnnnnnnnnj0...............................
-
-
-
-	-->
+	<!-- Use Iconifyer to generate all the favicons and touch icons you need:
+-->
 	<link rel="shortcut icon" href="favicon.ico" />
 
 	<!-- concatenate and minify for production -->
@@ -96,6 +94,7 @@
 		<li>x</li>
 		<li>y</li>
 		<li>z</li>
+		<li>new font</li>
 	</ul>
 
 <!-- jQuery -->
@@ -103,9 +102,29 @@
 <!-- <script>window.jQuery || document.write("<script src='js/libs/jquery-1.11.0.min.js'>\x3C/script>")</script> -->
 
 <!-- this is where we put our custom functions -->
-<!-- don't forget to concatenate and minify if needed -->
-<script src="_/js/functions.js"></script>
+<!-- don't forget to concatenate and minify if needed
+<script src="_/js/functions.js"></script>-->
+<script>
+	var arr=["arial, sans-serif", "courier new, sans-serif","georgia, serif", "Impact, Charcoal, sans-serif", "Tahoma, Geneva, sans-serif", "Kotta One, serif", "Playfair Display, serif", "Lora, serif", "Alice, serif", "Ultra, serif", "Vidaloka, serif", "Quicksand, sans-serif", "Ubuntu, sans-serif", "Exo, sans-serif", "Titillium Web, sans-serif"];
 
+	$('ul li:last-child').click(function() {
+
+		var arrNo= arr.length-1;
+
+		console.log(arrNo);
+
+		function getRandomInt(min, max) {
+		  return Math.floor(Math.random() * (max - min)) + min;
+		}
+
+		var rand= getRandomInt(0,arrNo);
+
+		console.log(rand);
+
+  	$('ul li').css("font-family", arr[rand]);
+	});
+
+</script>
 <!-- google analytics go here -->
 
 </body>
