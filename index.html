@@ -104,15 +104,16 @@
 
 	$( 'body p' ).click(function() {
 		var charNo= charA.length-1;
+		var fontsNo= fonts.length-1;
 		function getRandomInt(min, max) {
 			return Math.floor(Math.random() * (max - min)) + min;
 		}
 		var rChar= getRandomInt(0,charNo);
-		
+		var rFont= getRandomInt(0,fontsNo);
+
 		$( 'body p' ).html(charA[rChar]);
-		console.log(rChar);
-		console.log(charA[rChar]);
-		console.log("body p has been clicked")
+		$( 'body p' ).css("font-family",fonts[rFont]);
+
 	});
 
 </script>
