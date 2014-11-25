@@ -4,22 +4,10 @@
 .chromeframe {position: absolute; top: 0;}
 
 /* style */
-body{font-family:arial, sans-serif;}
+body{font-family:arial, sans-serif;text-align:center;}
+body p{font-size:20em;color:rgba(55,55,55,0.9);}
 
-.row{clear:both; overflow:hidden; margin:2% 0;}
-.row div:last-child{margin-right:0;}
-
-ul li{float:left; width:16.66667%; min-height:1em;font-size:6em;line-height:1.65em;text-align:center;text-transform:uppercase;color:rgba(35,35,35,0.9);}
-/*ul li:nth-child(2n){background:rgba(0,0,0,0.1);}*/
-
-ul li:hover{background:rgba(200,54,126,0.8);text-transform:lowercase;}
-
-ul li:last-child{font-size:2em;line-height:4.95;text-transform:lowercase;}
-
-
-
-
-/* Media queries */
+/* Media queries
 
 @media screen and (max-width: 780px) {
 body{background: rgba(240, 240, 240, 1.0);}
@@ -31,3 +19,4 @@ body{background: rgba(240, 240, 240, 1.0);}
 body{background: rgba(210, 210, 210, 1.0);}
 
 }
+*/

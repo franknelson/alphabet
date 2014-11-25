@@ -67,35 +67,7 @@
 
 <body>
 
-	<ul>
-		<li>a</li>
-		<li>b</li>
-		<li>c</li>
-		<li>d</li>
-		<li>e</li>
-		<li>f</li>
-		<li>g</li>
-		<li>h</li>
-		<li>i</li>
-		<li>j</li>
-		<li>k</li>
-		<li>l</li>
-		<li>m</li>
-		<li>n</li>
-		<li>o</li>
-		<li>p</li>
-		<li>q</li>
-		<li>r</li>
-		<li>s</li>
-		<li>t</li>
-		<li>u</li>
-		<li>v</li>
-		<li>w</li>
-		<li>x</li>
-		<li>y</li>
-		<li>z</li>
-		<li>new font</li>
-	</ul>
+	<p>a</p>
 
 <!-- jQuery -->
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
@@ -105,23 +77,27 @@
 <!-- don't forget to concatenate and minify if needed
 <script src="_/js/functions.js"></script>-->
 <script>
-	var arr=["arial, sans-serif", "courier new, sans-serif","georgia, serif", "Impact, Charcoal, sans-serif", "Tahoma, Geneva, sans-serif", "Kotta One, serif", "Playfair Display, serif", "Lora, serif", "Alice, serif", "Ultra, serif", "Vidaloka, serif", "Quicksand, sans-serif", "Ubuntu, sans-serif", "Exo, sans-serif", "Titillium Web, sans-serif"];
+	var fonts=["arial, sans-serif", "courier new, sans-serif","georgia, serif", "Impact, Charcoal, sans-serif", "Tahoma, Geneva, sans-serif", "Kotta One, serif", "Playfair Display, serif", "Lora, serif", "Alice, serif", "Ultra, serif", "Vidaloka, serif", "Quicksand, sans-serif", "Ubuntu, sans-serif", "Exo, sans-serif", "Titillium Web, sans-serif"];
+
+	var charA=["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
+
+	var charB=[];
 
 	$('ul li:last-child').click(function() {
 
-		var arrNo= arr.length-1;
+		var fontsNo= fonts.length-1;
 
-		console.log(arrNo);
+		console.log(fontsNo);
 
 		function getRandomInt(min, max) {
 		  return Math.floor(Math.random() * (max - min)) + min;
 		}
 
-		var rand= getRandomInt(0,arrNo);
+		var rFont= getRandomInt(0,fontsNo);
 
-		console.log(rand);
+		console.log(rFontd);
 
-  	$('ul li').css("font-family", arr[rand]);
+  	$('ul li').css("font-family", fonts[rFont]);
 	});
 
 </script>
