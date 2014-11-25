@@ -67,7 +67,7 @@
 
 <body>
 
-	<p>a</p>
+	<p></p>
 
 <!-- jQuery -->
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
@@ -79,25 +79,40 @@
 <script>
 	var fonts=["arial, sans-serif", "courier new, sans-serif","georgia, serif", "Impact, Charcoal, sans-serif", "Tahoma, Geneva, sans-serif", "Kotta One, serif", "Playfair Display, serif", "Lora, serif", "Alice, serif", "Ultra, serif", "Vidaloka, serif", "Quicksand, sans-serif", "Ubuntu, sans-serif", "Exo, sans-serif", "Titillium Web, sans-serif"];
 
+	//var key=;
+
 	var charA=["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
 
 	var charB=[];
 
-	$('ul li:last-child').click(function() {
+	var charNo= charA.length-1;
+	var fontsNo= fonts.length-1;
 
-		var fontsNo= fonts.length-1;
+	function getRandomInt(min, max) {
+		return Math.floor(Math.random() * (max - min)) + min;
+	}
 
-		console.log(fontsNo);
+	var rFont= getRandomInt(0,fontsNo);
+	var rChar= getRandomInt(0,charNo);
 
+	$( document ).ready(function() {
+		var h=window.innerHeight + "px";
+		console.log(h);
+		$( 'body p' ).css("line-height",h);
+		$( 'body p' ).html(charA[rChar]);
+	});
+
+	$( 'body p' ).click(function() {
+		var charNo= charA.length-1;
 		function getRandomInt(min, max) {
-		  return Math.floor(Math.random() * (max - min)) + min;
+			return Math.floor(Math.random() * (max - min)) + min;
 		}
-
-		var rFont= getRandomInt(0,fontsNo);
-
-		console.log(rFontd);
-
-  	$('ul li').css("font-family", fonts[rFont]);
+		var rChar= getRandomInt(0,charNo);
+		
+		$( 'body p' ).html(charA[rChar]);
+		console.log(rChar);
+		console.log(charA[rChar]);
+		console.log("body p has been clicked")
 	});
 
 </script>
