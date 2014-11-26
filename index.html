@@ -83,12 +83,26 @@
 
 	var charB=[];
 
+	var style=["uppercase", "lowercase"];
+
 	var charNo= charA.length-1;
 	var fontsNo= fonts.length-1;
 
 	function getRandomInt(min, max) {
 		return Math.floor(Math.random() * (max - min)) + min;
 	}
+
+	var rColor = {
+
+		newRGB: function() {
+			var R = getRandomInt(0, 255);
+			var G = getRandomInt(0, 255);
+			var B = getRandomInt(0, 255);
+			var rRGB = (R + "," + G + "," + B + "," + 0.8);
+			var newColor = "rgba(" + rRGB + ")";
+			return newColor;
+		}
+	};
 
 	var rFont= getRandomInt(0,fontsNo);
 	var rChar= getRandomInt(0,charNo);
@@ -103,14 +117,18 @@
 	$( 'body p' ).click(function() {
 		var charNo= charA.length-1;
 		var fontsNo= fonts.length-1;
+		var styleNo= style.length-1;
+
 		function getRandomInt(min, max) {
 			return Math.floor(Math.random() * (max - min)) + min;
 		}
 		var rChar= getRandomInt(0,charNo);
 		var rFont= getRandomInt(0,fontsNo);
+		var rStyle= getRandomInt(0,1);
+		//console.log("style number: " + styleNo);
 
 		$( 'body p' ).html(charA[rChar]);
-		$( 'body p' ).css("font-family",fonts[rFont]);
+		$( 'body p' ).css({"font-family":fonts[rFont],"text-transform":style[rStyle],"background":rColor.newRGB()});
 
 	});
 
