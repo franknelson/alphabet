@@ -7,10 +7,10 @@
 body{font-family:arial, sans-serif;text-align:center;transition:all 1.0s ease;}
 body p{font-size:19em;color:rgba(55,55,55,0.9);}
 
-/* Media queries
+/* Media queries*/
 
-@media screen and (max-width: 780px) {
-body{background: rgba(240, 240, 240, 1.0);}
+@media screen and (min-width: 1200px) {
+body p{font-size:45em;}
 
 }
 
