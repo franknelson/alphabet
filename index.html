@@ -59,7 +59,7 @@
 	var rChar= getRandomInt(0,charNo);
 
 	$( document ).ready(function() {
-		var h=(window.innerHeight-40) + "px";
+		var h=(window.innerHeight) + "px";
 		console.log(h);
 		$( 'body p' ).css("line-height",h);
 		$( 'body p' ).html(charA[rChar]);
@@ -76,11 +76,9 @@
 		var rChar= getRandomInt(0,charNo);
 		var rFont= getRandomInt(0,fontsNo);
 		var rStyle= getRandomInt(0,1);
-		//console.log("style number: " + styleNo);
 
 		$( 'body p' ).html(charA[rChar]);
-		$( 'body' ).css({"background":rColor.newRGB()});
-		$( 'body p' ).css({"font-family":fonts[rFont],"text-transform":style[rStyle]});
+		$( 'body p' ).css({"font-family":fonts[rFont],"text-transform":style[rStyle],"background":rColor.newRGB()});
 
 	});
 
@@ -95,11 +93,9 @@
 		var rChar= getRandomInt(0,charNo);
 		var rFont= getRandomInt(0,fontsNo);
 		var rStyle= getRandomInt(0,1);
-		//console.log("style number: " + styleNo);
 
 		$( 'body p' ).html(charA[rChar]);
-		$( 'body' ).css({"background":rColor.newRGB()});
-		$( 'body p' ).css({"font-family":fonts[rFont],"text-transform":style[rStyle]});
+		$( 'body p' ).css({"font-family":fonts[rFont],"text-transform":style[rStyle],"background":rColor.newRGB()});
 
 	});
 
