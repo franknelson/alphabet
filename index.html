@@ -98,7 +98,8 @@
 		//console.log("style number: " + styleNo);
 
 		$( 'body p' ).html(charA[rChar]);
-		$( 'body p' ).css({"font-family":fonts[rFont],"text-transform":style[rStyle],"background":rColor.newRGB()});
+		$( 'body' ).css({"background":rColor.newRGB()});
+		$( 'body p' ).css({"font-family":fonts[rFont],"text-transform":style[rStyle]});
 
 	});
 
