@@ -14,9 +14,9 @@
 	<title>alphabet site for Freddie</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="http://reset5.googlecode.com/hg/reset.min.css"/>
-	<!-- <link rel="stylesheet" href="_/css/reset.css" />
-	<link rel="stylesheet" href="_/css/style.css" /> -->
-	<style>*{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box}.chromeframe{position:absolute;top:0}body{font-family:arial,sans-serif;text-align:center;transition:all 1s ease}body p{font-size:19em;color:rgba(55,55,55,0.8)}@media screen and (min-width: 1200px){body p{font-size:45em}}</style>
+	<!-- <link rel="stylesheet" href="_/css/reset.css" />-->
+	<link rel="stylesheet" href="_/css/style.css" />	<style>*{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box}.chromeframe{position:absolute;top:0}body{font-family:arial,sans-serif;text-align:center;transition:all 1s ease}body p{font-size:19em;color:rgba(55,55,55,0.8)}@media screen and (min-width: 1200px){body p{font-size:45em}}</style>
+
 </head>
 
 <body>
@@ -60,6 +60,12 @@
 
 	$( document ).ready(function() {
 		var h=window.innerHeight + "px";
+		var ht=window.innerHeight;
+		if(ht < 851 && ht > 401){
+			$( 'body p' ).css("font-size","19em");
+		}else if (ht < 401){
+			$( 'body p' ).css("font-size","14em");
+		};
 		console.log(h);
 		$( 'body p' ).css("line-height",h);
 		$( 'body p' ).html(charA[rChar]);
