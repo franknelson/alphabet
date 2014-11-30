@@ -110,7 +110,7 @@
 		}
 		var rChar= getRandomInt(0,charNo);
 		var rFont= getRandomInt(0,fontsNo);
-		var rStyle= getRandomInt(0,1);
+		var rStyle= getRandomInt(0,styleNo);
 
 		$( 'body p' ).html(charA[rChar]);
 		$( 'body p' ).css({"font-family":fonts[rFont],"text-transform":style[rStyle],"background":rColor.newRGB()});
