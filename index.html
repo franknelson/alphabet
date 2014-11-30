@@ -71,6 +71,19 @@
 		$( 'body p' ).html(charA[rChar]);
 	});
 
+	$( window ).on( "orientationchange", function() {
+	  var h=window.innerHeight + "px";
+			var ht=window.innerHeight;
+			if(ht < 851 && ht > 401){
+				$( 'body p' ).css("font-size","19em");
+			}else if (ht < 401){
+				$( 'body p' ).css("font-size","14em");
+			};
+			console.log(h);
+			$( 'body p' ).css("line-height",h);
+			$( 'body p' ).html(charA[rChar]);
+	});
+
 	$( 'body p' ).click(function() {
 		var charNo= charA.length-1;
 		var fontsNo= fonts.length-1;
